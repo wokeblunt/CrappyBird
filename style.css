@@ -24,7 +24,7 @@ body {
 
 .subtitle {
     margin-top: .5rem;
-    color: red;
+    color: rgb(29, 55, 49);
     font-size: 40px;
     background-image: none;
     font-weight: 800;
@@ -63,7 +63,7 @@ body {
 }
 
 .bird {
-    --bird-size: 120px;
+    --bird-size: 90px;
     --bird-top: -1000;
     z-index: 10;
     /* position: relative; */

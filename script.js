@@ -41,14 +41,10 @@ function updateLoop(time) {
         
     }
     let newMultiplier
-    if (currentScore > 10) {
-        newMultiplier = (currentScore / 20 ) 
-        updatePipeSpeed(newMultiplier)
-    }
-
-    else {
-        updatePipeSpeed(0.5)
-    }
+    
+    newMultiplier = (0.5 + currentScore / 200 ) 
+    updatePipeSpeed(newMultiplier) 
+    
     
     
     window.requestAnimationFrame(updateLoop) 
@@ -86,7 +82,7 @@ function handleLose() {
     title.classList.remove("hide")
     subtitle.classList.remove("hide")
     birdChange.classList.add("hide")
-    subtitle.textContent = ` Mental status: GAY `
+    subtitle.textContent = ` You are GAY `
     
     document.addEventListener("keypress", handleStart, {once: true})
     }, 100)

@@ -1,7 +1,7 @@
 const HOLE_HEIGHT = 250
-const PIPE_WIDTH = 120
-let PIPE_SPEED = 0.5
-const PIPE_INTERVAL = 1300
+const PIPE_WIDTH = 140
+let PIPE_SPEED 
+const PIPE_INTERVAL = 1000
 let pipes = []
 let timeSinceLastPipe
 let passedPipeCount
